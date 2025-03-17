@@ -1,0 +1,47 @@
+/* Center the form on the page */
+.login-container {
+    width: 350px;  /* Increased width for better layout */
+    margin: 100px auto;  /* Centers the form vertically */
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style input fields */
+input {
+    width: 90%; /* Takes most of the container width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;  /* Ensures inputs are in block layout */
+    text-align: left;
+}
+
+/* Style submit button */
+button {
+    width: 100%; /* Full-width button */
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Improve label styling */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}

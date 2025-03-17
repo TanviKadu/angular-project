@@ -1,0 +1,22 @@
+<div class="doctor-list-container">
+    <h2>Doctor List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Specialty</th>
+          <th>Phone</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let doctor of doctors">
+          <td>{{ doctor.name }}</td>
+          <td>{{ doctor.specialty }}</td>
+          <td>{{ doctor.phone }}</td>
+          <td>{{ doctor.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

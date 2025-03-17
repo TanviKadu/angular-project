@@ -1,0 +1,11 @@
+<h2>Welcome to Hospital Appointment System</h2>
+<button (click)="logout()">Logout</button>
+
+<h3>Available Doctors</h3>
+<ul>
+  <li *ngFor="let doctor of doctors">
+    Dr. {{ doctor.name }} - {{ doctor.specialty }}
+    <button (click)="bookAppointment(doctor)">Book Appointment</button>
+    
+  </li>
+</ul>

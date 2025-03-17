@@ -1,0 +1,30 @@
+.doctor-list-container {
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #007bff;
+   
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f4f4f4;
+}

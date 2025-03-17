@@ -1,0 +1,31 @@
+<div class="appointment-container">
+    <h2>Book an Appointment</h2>
+    <form (ngSubmit)="onBookAppointment()">
+      
+      <!-- Select Doctor -->
+      <label for="doctor">Select Doctor:</label>
+      <select [(ngModel)]="appointment.doctor" name="doctor" required>
+        <option value="" disabled>Select a doctor</option>
+        <option *ngFor="let doctor of doctors" [value]="doctor.name">{{ doctor.name }} - {{ doctor.specialty }}</option>
+      </select>
+  
+      <!-- Select Date -->
+      <label for="date">Select Date:</label>
+      <input type="date" [(ngModel)]="appointment.date" name="date" required>
+  
+      <!-- Select Time -->
+      <label for="time">Select Time:</label>
+      <input type="time" [(ngModel)]="appointment.time" name="time" required>
+  
+      <!-- Patient Name -->
+      <label for="name">Your Name:</label>
+      <input type="text" [(ngModel)]="appointment.patientName" name="patientName" placeholder="Full Name" required>
+  
+      <!-- Patient Email -->
+      <label for="email">Your Email:</label>
+      <input type="email" [(ngModel)]="appointment.patientEmail" name="patientEmail" placeholder="Email Address" required>
+  
+      <button type="submit">Book Appointment</button>
+    </form>
+  </div>
+  
